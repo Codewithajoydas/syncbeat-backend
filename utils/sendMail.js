@@ -12,7 +12,7 @@ async function sendOTP(email, otp) {
     await transporter.sendMail({
         from: `"Syncbeat" <${process.env.EMAIL}>`,
         to: email,
-        subject: "Syncbeat: Your secure login code",
+        subject: "Syncbeat: Your secure One Time Password",
         html: fs.readFileSync("./templates/mail/forgot.html", "utf-8").replace("{{OTP}}", otp),
     });
     return otp;
