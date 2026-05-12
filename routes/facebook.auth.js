@@ -7,9 +7,6 @@ const axios = require("axios");
 const BASE_URL = "https://rumbling-research-eel.ngrok-free.dev";
 const uploadToCloudinary = require("../utils/uploadToCloudinary");
 
-console.log("This is the id", process.env.FACEBOOK_CLIENT_ID);
-console.log("This is the secret", process.env.FACEBOOK_CLIENT_SECRET);
-
 const uuid = require("uuid");
 router.get("/facebook", async (req, res) => {
 

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development npx nodemon index.js",
     "prod": "cross-env NODE_ENV=production npx nodemon index.js",
-    "commit": "cz"
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -33,17 +33,14 @@
     "mongoose": "^9.6.0",
     "multer": "^2.1.1",
     "nodemailer": "^8.0.7",
+    "pino": "^10.3.1",
+    "pino-caller": "^4.0.0",
+    "pino-pretty": "^13.1.3",
     "redis": "^5.12.1",
     "socket.io": "^4.8.3",
     "uuid": "^14.0.0"
   },
   "devDependencies": {
-    "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "standard-version": "^9.5.0"
   }
 }
